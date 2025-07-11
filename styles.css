@@ -50,6 +50,7 @@ body{
     grid-template-columns: 17rem auto 30rem;
     gap: 2rem;
     transition: var(--transition);
+    user-select: none;
 }
 
 .comtainer{
@@ -292,4 +293,163 @@ nav{
 
 .sidebar a.active *{
     color: var(--color-primary);
+}
+
+/* Navbar Styling */
+
+.main_header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 7rem;
+}
+
+.main_header input[type="date"]{
+    padding: 0.5rem 2rem;
+    background: var(--color-white);
+    color: var(--color-gray-dark);
+}
+
+.main_card{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    background: linear-gradient(#30e50c, #98b3ef);
+    padding: var(--card-padding);
+    border-radius: var(--radius-3);
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2rem 3rem var(--color-purple-light);
+    transition: var(--transition);
+}
+
+.card * {
+    color: white;
+}
+
+.card:nth-child(2){
+    background: linear-gradient(#80828f, #27282f);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(3){
+    background: linear-gradient(#523bfe, #0cdfdc);
+    box-shadow: 0 2rem 3rem var(--color-primary-light);
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.card_header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+}
+
+
+.card_header-left{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.card_header-right{
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.card_header-left h3{
+    font-weight: 250;
+}
+
+.card_header-left img{
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: var(--radius-1);
+    padding: 0.4rem;
+}
+
+.card_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_body-chip{
+    width: 3.5rem;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_footer-right{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.fastPayment{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fastpayment_badges{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.fastpayment_badge{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: var(--radius-1);
+    padding: 0.6rem var(--card-padding);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.fastpayment_badge:hover{
+    box-shadow: 0 0 1rem var(--color-primary-light);
+}
+
+.fastpayment_badge span{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.fastpayment_badge div{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
+
+
+canvas{
+    background: var(--color-white);
+    width: 100%;
+    margin-top: 2rem;
+    border-radius:  var(--radius-3);
+    padding: var(--card-padding);
 }
