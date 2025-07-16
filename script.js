@@ -1,3 +1,4 @@
+// chart 
 const chart = document.querySelector("#chart").getContext('2d');
 
 new Chart (chart, {
@@ -36,3 +37,34 @@ new Chart (chart, {
         responsive: true
     }
 })
+
+// hamburger open and close
+const sidebar = document.querySelector('.sidebar')
+const closeSiderbarBtn = document.querySelector('.sidebar_close-btn')
+const opensiderbarBtn = document.querySelector('.nav_menu_btn')
+
+opensiderbarBtn.addEventListener('click', () => {
+    sidebar.style.display = 'flex';
+})
+
+closeSiderbarBtn.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+})
+
+// theme toggle
+const themeBtn = document.querySelector('.nav_theme_btn');
+
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
+    if (document.body.classList.contains('dark-theme')){
+        themeBtn.innerHTML = '<i class="uil uil-sun"></i>'        
+        // this saves the theme to your local storage so the browser remembers even after closing!
+        localStorage.setItem('currentTheme', 'dark-theme')
+    } else {
+        themeBtn.innerHTML = '<i class="uil uil-moon"></i>'
+        // this saves the them to your local storage the browser remembers even after closing!
+        localStorage.setItem('currentTheme', '')
+    } 
+})
+
+document.body.className = localStorage.getItem('currentTheme') 

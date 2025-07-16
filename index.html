@@ -54,12 +54,12 @@
             <h5>Exchange</h5>
         </a>
 
-        <a href="wallet/wallet.html">
+        <a href="wallet/wallet.html" rel="no-referrer noopener">
             <i class="uil uil-wallet"></i>
             <h5>Wallet</h5>
         </a>
 
-        <a href="transaction/transacation.html">
+        <a href="transaction/transacation.html" rel="no-referrer noopener">
             <i class="uil uil-transaction"></i>
             <h5>Transactions</h5>
         </a>
@@ -83,6 +83,10 @@
           <i class="uil uil-cog"></i>
             <h5>Settings</h5>
         </a>
+
+        <button class="sidebar_close-btn">
+            <i class="uil uil-multiply"></i>
+        </button>
     </menu>
 
 
@@ -311,15 +315,221 @@
 
 
 
-<!---CHART-->
-<canvas id="chart">
+    <!---CHART-->
+    <canvas id="chart">
 
-</canvas>
+    </canvas>
 
 </main>
+
+<!---------------INVESTMENTS------------------>
+<section class="right">
+    <section class="investments">
+        <header class="investments_header">
+            <h2>Investment</h2>
+            <a href="#">
+                 More <i class="uil uil-angle-right-b"></i>
+            </a>
+        </header>
+
+        <article class="investment">
+            <img src="./img/uniliver.png" alt="uniliver">
+            <h4>Uniliver</h4>
+            <div class="date-time">
+                <p>7th February, 2025</p>
+                <small class="text-muted">9:14 pm</small>
+            </div>
+
+            <div class="bond">
+                <p>1,243</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+
+            <div class="amount">
+                <h5>$30,124</h5>
+                <small class="danger">4.27%</small>
+            </div>
+        </article>
+
+
+        <article class="investment">
+            <img src="./img/tesla.png" alt="uniliver">
+            <h4>Tesla</h4>
+            <div class="date-time">
+                <p>7th February, 2025</p>
+                <small class="text-muted">9:14 pm</small>
+            </div>
+
+            <div class="bond">
+                <p>1,243</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+
+            <div class="amount">
+                <h5>$30,124</h5>
+                <small class="danger">4.27%</small>
+            </div>
+        </article>
+
+
+        <article class="investment">
+            <img src="./img/mcdonalds.png" alt="uniliver">
+            <h4>Mcdonalds</h4>
+            <div class="date-time">
+                <p>7th February, 2025</p>
+                <small class="text-muted">9:14 pm</small>
+            </div>
+
+            <div class="bond">
+                <p>1,243</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+
+            <div class="amount">
+                <h5>$30,124</h5>
+                <small class="danger">4.27%</small>
+            </div>
+        </article>
+
+        <article class="investment">
+            <img src="./img/monster.png" alt="uniliver">
+            <h4>Monster</h4>
+            <div class="date-time">
+                <p>7th February, 2025</p>
+                <small class="text-muted">9:14 pm</small>
+            </div>
+
+            <div class="bond">
+                <p>1,243</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+
+            <div class="amount">
+                <h5>$30,124</h5>
+                <small class="danger">4.27%</small>
+            </div>
+        </article>
+    </section>
+
+
+    <!-----------------------RECENT TRANSCATIONS---------------------->
+    <section class="recentTransactions">
+        <header class="recentransaction_header">
+            <h2>Current Transactions</h2>
+            <a href="#">More <i class="uil uil-angle-right-b"></i></a>
+        </header>
+
+        <article class="transaction">
+        <div class="transaction_service">
+            <div class="icon bg-purple-light">
+                <i class="uil uil-headphones"></i>
+            </div>
+
+            <div class="transaction_details">
+                <h4>Music</h4>
+                <p>20.12.2025</p>
+            </div>
+        </div>
+
+        <div class="transaction_card">
+            <div class="transaction_card-image bg-success">
+                <img src="./img/visa.png" alt="visa">
+            </div>
+
+            <div class="transaction_details">
+                <p>*5738</p>
+                <small class="text-muted">Credit Card</small>
+            </div>
+        </div>
+        
+        <h4>-$20</h4>
+        </article>
+
+        <article class="transaction">
+        <div class="transaction_service">
+            <div class="icon bg-purple-light">
+                <i class="uil uil-headphones"></i>
+            </div>
+
+            <div class="transaction_details">
+                <h4>Pharmacy</h4>
+                <p>20.11.2024</p>
+            </div>
+        </div>
+
+        <div class="transaction_card">
+            <div class="transaction_card-image bg-danger">
+                <img src="./img/visa.png" alt="visa">
+            </div>
+
+            <div class="transaction_details">
+                <p>*5738</p>
+                <small class="text-muted">Credit Card</small>
+            </div>
+        </div>
+        
+        <h4>-$44</h4>
+        </article>
+
+
+        <article class="transaction">
+        <div class="transaction_service">
+            <div class="icon bg-purple-light">
+                <i class="uil uil-headphones"></i>
+            </div>
+
+            <div class="transaction_details">
+                <h4>Shopping</h4>
+                <p>19.09.2023</p>
+            </div>
+        </div>
+
+        <div class="transaction_card">
+            <div class="transaction_card-image bg-danger">
+                <img src="./img/master card.png" alt="visa">
+            </div>
+
+            <div class="transaction_details">
+                <p>*5738</p>
+                <small class="text-muted">Credit Card</small>
+            </div>
+        </div>
+        
+        <h4>-$570</h4>
+        </article>
+
+        <article class="transaction">
+        <div class="transaction_service">
+            <div class="icon bg-purple-light">
+                <i class="uil uil-headphones"></i>
+            </div>
+
+            <div class="transaction_details">
+                <h4>Vacation</h4>
+                <p>20.11.2020</p>
+            </div>
+        </div>
+
+        <div class="transaction_card">
+            <div class="transaction_card-image bg-primary">
+                <img src="./img/visa.png" alt="visa">
+            </div>
+
+            <div class="transaction_details">
+                <p>*5738</p>
+                <small class="text-muted">Credit Card</small>
+            </div>
+        </div>
+        
+        <h4>-$60</h4>
+        </article>
+    </section>
+</section>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js" integrity="sha512-O2fWHvFel3xjQSi9FyzKXWLTvnom+lOYR/AUEThL/fbP4hv1Lo5LCFCGuTXBRyKC4K4DJldg5kxptkgXAzUpvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
+
 </body>
 </html>
