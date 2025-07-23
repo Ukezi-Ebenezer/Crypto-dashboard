@@ -1,3 +1,12 @@
+// Theme toggle for dark mode
+document.addEventListener('DOMContentLoaded', function() {
+  const themeBtn = document.querySelector('.nav_theme_btn');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-theme');
+    });
+  }
+});
 // chart 
 const chart = document.querySelector("#chart").getContext('2d');
 

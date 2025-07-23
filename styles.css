@@ -27,7 +27,7 @@
 }
 
 .dark-theme {
-    --color-white: #131316;
+    --color-white: #f2f2f2;
     --color-light: #23232a;
     --color-dark: #ddd;
     --color-gray-dark: #adacb5;
@@ -847,4 +847,8 @@ canvas{
 
 .nav_theme_btn{
     color: var(--color-dark);
+}
+
+.sidebar_close-btn{
+    display: none;
 }
